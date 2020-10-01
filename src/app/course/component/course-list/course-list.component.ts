@@ -37,7 +37,7 @@ export class CourseListComponent implements OnInit, OnDestroy {
 
   }
 
-  deleteCourse(courseId: string) {
+  deleteCourse(courseId: number) {
     this.deleteCourseSubscription = this.courseService.deleteCourse(courseId).subscribe(result => {
       console.log(result);
     });

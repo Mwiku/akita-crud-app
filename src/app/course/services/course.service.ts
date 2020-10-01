@@ -22,14 +22,14 @@ export class CourseService {
     );
   }
 
-  deleteCourse(courseId: string): Observable<any> {
+  deleteCourse(courseId: number): Observable<any> {
     return this.http.delete('/api/courses/' + courseId).pipe(
       tap(result => {
         this.store.remove(courseId);
       })
     );
   }
-  
+
   createCourse(course: Course): Observable<Course>{
     return this.http.post<Course>(`${this.serverUrl}/api/courses`, course).pipe(
       tap(value => {
@@ -38,7 +38,7 @@ export class CourseService {
     )
   }
 
-  updateCourse(courseId: string, course: Course): Observable<any> {
+  updateCourse(courseId: number, course: Course): Observable<any> {
     return this.http.put(`${this.serverUrl}/api/courses/${courseId}`, course).pipe(
       tap(result =>{
         this.store.update(courseId,course);
