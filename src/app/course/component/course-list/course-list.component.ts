@@ -33,7 +33,9 @@ export class CourseListComponent implements OnInit, OnDestroy {
           return this.courseService.getAllCourses();
         }
       })
-    ).subscribe( result => {});
+    ).subscribe( result => {
+      console.log(`the result$ is: ${JSON.stringify(result)}`);
+    });
 
   }
 

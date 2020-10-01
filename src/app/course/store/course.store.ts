@@ -3,12 +3,12 @@ import { Course } from '../model/course.model';
 import { ID, EntityStore, StoreConfig, EntityState } from '@datorama/akita';
 
 export interface CourseState extends EntityState<Course, number> {
-    areCourseLoaded: boolean;
+    areCoursesLoaded: boolean;
 }
 
 export function CreateInitialState(): CourseState {
     return {
-        areCourseLoaded: false
+        areCoursesLoaded: false
     };
 }
 

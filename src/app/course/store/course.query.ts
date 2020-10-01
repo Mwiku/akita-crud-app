@@ -9,7 +9,7 @@ import { QueryEntity } from '@datorama/akita';
 export class CourseQuery extends QueryEntity<CourseState> {
     
     selectAreCoursesLoaded$ = this.select(state => {
-        return state.areCourseLoaded;
+        return state.areCoursesLoaded;
     })
 
     constructor(protected store: CourseStore){
