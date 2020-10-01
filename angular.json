@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "akita-crud-app"
+    }
+  },
+  "defaultProject": "akita-crud-app",
+  "cli": {
+    "analytics": "8d408867-032b-4866-a657-0d8d08aa566c"
+  }
 }
