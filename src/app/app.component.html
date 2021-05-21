@@ -10,6 +10,17 @@
     </ul>
   </article>
 </section>
+<h5>Languages</h5>
+<div *ngIf="pipeMetadata.count > 3">
+   count is more than 2 
+</div>
+{{ pipeMetadata.count }}
+<section *ngFor="let language of languages; let itemCount=count;">
+  <ul>
+    <li> {{language | titlecase}} </li>
+
+  </ul>
+</section>
 <article style="margin-top: 20px;">
   <router-outlet></router-outlet>
 </article>

@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'akita-crud-app';
+
+  public languages : string[] = ['C', 'C++', 'Go', 'Python', 'Typescript', 'Swift'];
+
+  pipeMetadata = { count : 2 };
 }
